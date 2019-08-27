@@ -3,6 +3,6 @@ FactoryBot.define do
     name { "MyString" }
     description { "MyText" }
     published { false }
-    category { "MyString" }
+    category { "otc" }
   end
 end

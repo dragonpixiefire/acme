@@ -7,13 +7,13 @@ RSpec.describe "products/index", type: :view do
         :name => "Name",
         :description => "MyText",
         :published => false,
-        :category => "Category"
+        :category => "otc"
       ),
       Product.create!(
         :name => "Name",
         :description => "MyText",
         :published => false,
-        :category => "Category"
+        :category => "otc"
       )
     ])
   end
@@ -23,6 +23,6 @@ RSpec.describe "products/index", type: :view do
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
     assert_select "tr>td", :text => false.to_s, :count => 2
-    assert_select "tr>td", :text => "Category".to_s, :count => 2
+    assert_select "tr>td", :text => "otc".to_s, :count => 2
   end
 end

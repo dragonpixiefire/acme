@@ -1,3 +1,7 @@
+#https://medium.com/@lukepierotti/setting-up-rspec-and-factory-bot-3bb2153fb909
+#required for factory bot support
+require 'support/factory_bot'
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
